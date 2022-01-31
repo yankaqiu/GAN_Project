@@ -4,7 +4,6 @@ __pycache__/
 **/*_results/
 *.out
 
-StyleGAN2/
 *.pth
 *.pyc
 *.txt
