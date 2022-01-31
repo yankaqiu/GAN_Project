@@ -1,5 +1,7 @@
 # 基于 CycleGAN 和 Stylegan2 网络模型在图像转换/生成的优化微调
 
+
+
 ## 实验环境
 
 #### 实验平台：
@@ -142,17 +144,19 @@ python train.py --batch BATCH_SIZE LMDB_PATH
 
 Horses:
 
-<img src="E:\作业资料-branchE\神经网络与深度学习\课程设计\图片\cycle10.png" style="zoom: 67%;" />
+[<img src="https://s4.ax1x.com/2022/01/31/HigArn.png" alt="HigArn.png" style="zoom:67%;" />](https://imgtu.com/i/HigArn)
 
 Simpsons:
 
-<img src="E:\作业资料-branchE\神经网络与深度学习\课程设计\图片\cycle4.png" style="zoom:67%;" />
+[<img src="https://s4.ax1x.com/2022/01/31/HiczUf.png" alt="HiczUf.png" style="zoom:67%;" />](https://imgtu.com/i/HiczUf)
 
-<img src="E:\作业资料-branchE\神经网络与深度学习\课程设计\图片\cycle5.png" style="zoom: 67%;" />
+[<img src="https://s4.ax1x.com/2022/01/31/HigC8g.png" alt="HigC8g.png" style="zoom:67%;" />](https://imgtu.com/i/HigC8g)
+
+
 
 Loss图像：
 
-<img src="E:\作业资料-branchE\神经网络与深度学习\课程设计\图片\cycleloss1.png" style="zoom:67%;" />
+[<img src="https://s4.ax1x.com/2022/01/31/Higivj.png" alt="Higivj.png" style="zoom:67%;" />](https://imgtu.com/i/Higivj)
 
 
 
@@ -162,17 +166,25 @@ Loss图像：
 
 Houses:
 
-<img src="E:\作业资料-branchE\神经网络与深度学习\课程设计\图片\cycle11.png" style="zoom:67%;" />
+[<img src="https://s4.ax1x.com/2022/01/31/HigEbq.png" alt="HigEbq.png" style="zoom:67%;" />](https://imgtu.com/i/HigEbq)
 
 Simpsons:
 
-<img src="E:\作业资料-branchE\神经网络与深度学习\课程设计\图片\cycle7.png" style="zoom:67%;" />
+[<img src="https://s4.ax1x.com/2022/01/31/Hig9PS.png" alt="Hig9PS.png" style="zoom:67%;" />](https://imgtu.com/i/Hig9PS)
 
-<img src="E:\作业资料-branchE\神经网络与深度学习\课程设计\图片\cycle9.png" style="zoom:67%;" />
+[<img src="https://s4.ax1x.com/2022/01/31/HigP2Q.png" alt="HigP2Q.png" style="zoom:67%;" />](https://imgtu.com/i/HigP2Q)
 
 Loss 图像：
 
-<img src="E:\作业资料-branchE\神经网络与深度学习\课程设计\图片\cycleloss2.png" style="zoom:67%;" />
+[<img src="https://s4.ax1x.com/2022/01/31/HigkKs.png" alt="HigkKs.png" style="zoom:67%;" />](https://imgtu.com/i/HigkKs)
+
+三种方法在 Simpsons faces<->人脸 任务对比结果：
+
+| Loss               | Per-pixel ace. | Per-class acc. | Class IOU |
+| ------------------ | -------------- | -------------- | --------- |
+| CycleGAN           | 0.22           | 0.07           | 0.02      |
+| WCycleGAN          | 0.34           | 0.13           | 0.10      |
+| WCycleGAN-improved | 0.42           | 0.22           | 0.09      |
 
 
 
@@ -180,6 +192,6 @@ Loss 图像：
 
 基于 FFHQ 的预训练集在 Simpsons上训练结果：
 
-![](E:\作业资料-branchE\神经网络与深度学习\课程设计\图片\Simposons.png)
+[![HigS58.png](https://s4.ax1x.com/2022/01/31/HigS58.png)](https://imgtu.com/i/HigS58)
 
 详细结果及分析见报告
