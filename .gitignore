@@ -1,0 +1,12 @@
+__pycache__/
+
+**/*_model/
+**/*_results/
+*.out
+
+StyleGAN2/
+*.pth
+*.pyc
+*.txt
+*.png
+*.pt
